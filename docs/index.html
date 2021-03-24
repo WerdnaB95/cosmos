@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="li"><a href="">HOME</a></div>
+        <div class="line"></div>
+        <div class="li"><a href="">MOVE</a></div>
+        <div class="line"></div>
+        <div class="li"><a href="">LOGIN</a></div>
+    </div>
+    <div class="text">Website template<br>with animation<br>in the background</div>
+    <div class="button"><div class="txt">View</div></div>
+    <script>
+        function random(x, y) {
+            return (x + (Math.random() * (y - x)));
+        }
+        for (var i = 0; i < 500; i++) {
+            document.body.innerHTML += '<div class="star" style="animation-duration: ' +random(5,30) + 's; top: ' + random(0, 100) + '%; left: ' + random(0, 100) + '%;"></div>';
+        }
+    </script>
+</body>
+</html>
